@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="encabezado"></header>
+    <main>     
+        <div class="container">
+            <div class="row ">
+
+                <section class="col-sm-12 col-md-1">
+                    <div class="logo">
+                        <img src="imagenes/Logo-1.png" alt="logo-alura">
+                    </div>
+                </section>
+
+                <section class="col-sm-12 col-md-7">
+                    <form>                        
+                        <div class="entrada">
+                            <textarea cols="70" rows="10" placeholder="Ingresar el texto aqui" id="input" class="scroll"></textarea>
+                        </div>                    
+
+                        <div>
+                            <p><img src="imagenes/Vector.png" alt="vector" class="vector"> Solo letras  minúsculas y sin acentos</p>
+                        </div>
+
+                        <div class="entrada-botones">                            
+                            
+                            <button type="button" class="boton botonE" onclick="capturar(1)">Encriptar</button>
+                            <button type="button" class="boton botonD" onclick="capturar(2)">Desencriptar</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="resultado col-sm-12 col-md-4">
+                    <div id="nodata">
+                        <img src="imagenes/Muñeco.png" alt="muñeco mirando al diamante" class="muñeco">
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desea encriptar o desencriptar.</p>
+                    </div>
+
+                    <div id="data"> 
+                        <div class="muestra-result scroll">
+                            <p id="resultt"></p>
+                        </div>
+                        <button type="button" class="boton botonR" onclick="copiartexto()">Copiar</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>    
+    </main>
+    <footer class="pie-pagina">
+        <p>&#9401 Elaborado por Etienne Alcocer Lau - Grupo 4 Alura</p>
+        
+       
+    </footer>
+    
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
